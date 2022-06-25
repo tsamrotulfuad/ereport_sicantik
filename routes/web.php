@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PermohonanController;
 use App\Http\Controllers\PencarianController;
+use App\Http\Controllers\ChangePasswordController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,6 +37,10 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/profile', function () {
         return view('admin.profile');
     })->name('profile');
+
+    Route::get('/setting', [ChangePasswordController::class, 'index'])->name('setting');
+
+    Route::post('/updatepassword', [ChangePasswordController::class, 'update'])->name('setting.update.password');
 
     Route::resource('permohonan', PermohonanController::class);
 
