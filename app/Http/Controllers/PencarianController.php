@@ -21,7 +21,7 @@ class PencarianController extends Controller
                                     '<p class="card-text">'.
                                     'Berkas permohonan izin ' . $hasilcari->jenis_izin . ' anda dengan no. permohonan ' . $hasilcari->no_permohonan . ' telah selesai diterbitkan dan silahkan mengunduhnya dengan menekan tombol unduh dibawah.'.
                                     '</p>'.
-                                    '<a href="'. $hasilcari->link_izin .'" class="btn btn-primary">Unduh</a>'.
+                                    '<a href="'. $hasilcari->link_izin .'" class="btn btn-primary" target="_blank">Unduh</a>'.
                                 '</div>'.
                                 '</div>';
                 }
