@@ -13,6 +13,9 @@
     <!-- Custom styles for this template -->
     <link href="{{ asset('css/login.css') }}" rel="stylesheet">
 
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ asset('logo/favicon.png') }}">
+
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -69,9 +72,10 @@
   </head>
   <body class="text-center">
     <main class="form-signin w-100 m-auto">
+      <img class="mb-4" src="{{ asset('logo/ciamik.png') }}" alt="" height="115">
         <form action="/login" method="POST">
           @csrf
-            <img class="mb-4" src="{{ asset('logo/kotapasuruan.png') }}" alt="" width="95" height="115">
+      
             <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
             <div class="form-floating">

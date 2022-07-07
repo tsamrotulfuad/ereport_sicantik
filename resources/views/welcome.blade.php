@@ -14,12 +14,15 @@
     <!-- Custom styles for this template -->
     <link href="{{ asset('css/signin.css') }}" rel="stylesheet">
 
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ asset('logo/favicon.png') }}">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     
   </head>
   <body>
     <div class="form-signin">
-      <img class="d-block mx-auto mb-4" src="{{ asset('logo/kotapasuruan.png') }}" alt="" width="95" height="115">
+      <img class="d-block mx-auto mb-4" src="{{ asset('logo/ciamik.png') }}" alt="" height="115">
       <h2 class="text-center">DPMPTSP Kota Pasuruan</h2>
       <p class="lead text-center">Unduh Izin SiCantik Cloud</p>
       <form class="card p-3">

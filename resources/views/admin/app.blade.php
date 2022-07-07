@@ -24,6 +24,9 @@
     <!-- Custom styles for this page -->
     <link href="{{ asset('vendor/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
 
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ asset('logo/favicon.png') }}">
+
     @toastr_css
 </head>
 
